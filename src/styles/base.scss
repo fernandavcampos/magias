@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+    line-height: 1.6;
+  }
+
+  h1{
+    color: $primary-color;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: $padding-large 0;
+  }
+  

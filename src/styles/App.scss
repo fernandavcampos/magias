@@ -1,0 +1,55 @@
+@import './Style.scss';
+@import './mixins';
+@import './base';
+
+.spell-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: $padding-medium;
+  margin-top: $padding-large;
+  
+  div {
+    padding: $padding-medium;
+    background-color: $primary-color;
+    color: white;
+    border-radius: $border-radius;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+.spell-detail {
+  background-color: white;
+  padding: $padding-large;
+  border-radius: $border-radius;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: $padding-large;
+
+  h2 {
+    margin-bottom: $padding-medium;
+    color: $primary-color;
+  }
+
+  p {
+    margin-bottom: $padding-small;
+    color: $text-color;
+  }
+}
+
+.home-page {
+  .filter {
+    margin-bottom: $padding-medium;
+    input {
+      width: 100%;
+      padding: $padding-small;
+      border-radius: $border-radius;
+      border: 1px solid $secondary-color;
+      
+    }
+  }
+}
